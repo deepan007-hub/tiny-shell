@@ -1,0 +1,27 @@
+## Output Preview
+
+Example session of the mini shell running in the terminal:
+
+```
+tsh> pwd
+/home/user/projects/mini-shell
+
+tsh> ls
+mini_shell.c
+README.md
+
+tsh> ls -la
+total 16
+drwxr-xr-x  2 user user 4096 Jun 19 12:28 .
+drwxr-xr-x 10 user user 4096 Jun 19 12:20 ..
+-rw-r--r--  1 user user 2200 Jun 19 12:28 mini_shell.c
+-rw-r--r--  1 user user  900 Jun 19 12:28 README.md
+
+tsh> echo Hello World
+Hello World
+
+tsh> exit
+Exiting shell...
+```
+
+This demonstrates how the shell reads user commands, creates a child process, and executes system programs using `execvp()`.
